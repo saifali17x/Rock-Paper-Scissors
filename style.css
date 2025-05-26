@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap");
+
+.font-poppins {
+  font-family: "Poppins", sans-serif !important;
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.bg-navy {
+  background: linear-gradient(270deg, #0a1a40, #162a6c, #0a1a40);
+  background-size: 600% 600%;
+  animation: gradientShift 20s ease infinite;
+}
+
+.bg-navy-light {
+  background-color: rgba(15, 32, 89, 0.7);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.choice-btn:focus-visible,
+#resetBtn:focus-visible {
+  outline: 3px solid #66f6ff;
+  outline-offset: 2px;
+}
+
+.btn-purple {
+  background-color: #6b46c1;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.btn-purple:hover,
+.btn-purple:focus {
+  background-color: #805ad5;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #choices {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+  #choices .choice-btn {
+    flex: 1 1 0 !important;
+    max-width: 150px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  #choices {
+    flex-direction: column !important;
+  }
+  #result {
+    font-size: 1.75rem !important;
+  }
+}

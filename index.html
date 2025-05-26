@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock Paper Scissors - Navy Edition</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body
+    class="bg-navy d-flex flex-column align-items-center justify-content-center min-vh-100 text-white font-roboto p-3">
+
+    <main class="bg-navy-light bg-opacity-75 rounded-4 shadow-lg p-5 text-center w-100" style="max-width: 480px;">
+        <h1 class="display-4 fw-bold font-poppins text-cyan-300 mb-4 user-select-none">
+            <div>🪨 Rock</div>
+            <div>📄 Paper</div>
+            <div>✂️ Scissors</div>
+        </h1>
+
+        <section id="choices" class="d-flex justify-content-center gap-3 mb-4 flex-wrap">
+            <button data-choice="0"
+                class="choice-btn btn btn-primary d-flex flex-column align-items-center justify-content-center p-4 fw-semibold fs-4 rounded-4 flex-fill"
+                type="button">
+                <span class="fs-1">🪨</span>
+                Rock
+            </button>
+            <button data-choice="1"
+                class="choice-btn btn btn-info d-flex flex-column align-items-center justify-content-center p-4 fw-semibold fs-4 rounded-4 flex-fill"
+                type="button">
+                <span class="fs-1">📄</span>
+                Paper
+            </button>
+            <button data-choice="2"
+                class="choice-btn btn btn-purple d-flex flex-column align-items-center justify-content-center p-4 fw-semibold fs-4 rounded-4 flex-fill"
+                type="button">
+                <span class="fs-1">✂️</span>
+                Scissors
+            </button>
+        </section>
+
+        <section id="result" class="mb-4 fs-4 fw-bold font-poppins min-vh-25 user-select-none"></section>
+
+        <section class="d-grid grid-cols-2 gap-3 mb-3 font-monospace fs-5 fw-semibold text-cyan-200">
+            <div>Total Games: <span id="totalGames">0</span></div>
+            <div>Your Wins: <span id="humanWins">0</span></div>
+            <div>Computer Wins: <span id="computerWins">0</span></div>
+            <div>Ties: <span id="ties">0</span></div>
+            <div class="col-span-2">Win Rate: <span id="winRate">0%</span></div>
+        </section>
+
+        <button id="resetBtn" type="button" class="btn btn-danger btn-lg fw-bold rounded-4 w-100">
+            Reset Stats
+        </button>
+    </main>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
