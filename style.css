@@ -29,21 +29,54 @@
   }
 }
 
-.choice-btn:focus-visible,
-#resetBtn:focus-visible {
-  outline: 3px solid #66f6ff;
-  outline-offset: 2px;
-}
+/* Rock button Section */
 
-.btn-purple {
-  background-color: #6b46c1;
+.btn-rock {
+  background-color: #9ca3af;
   color: white;
   transition: background-color 0.3s ease;
 }
-.btn-purple:hover,
-.btn-purple:focus {
-  background-color: #805ad5;
+.btn-rock:hover,
+.btn-rock:focus {
+  background-color: #4b5563;
   color: white;
+}
+.btn-rock:active {
+  transition: none;
+}
+
+/* Paper Button Section */
+
+.btn-paper {
+  background-color: #35d0f2;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.btn-paper:hover,
+.btn-paper:focus {
+  background-color: #0025e0;
+  color: white;
+}
+
+.btn-paper:active {
+  transition: none;
+}
+
+/* Scissors Button Section */
+
+.btn-scissors {
+  background-color: #6b46c1 !important;
+  color: white !important;
+  transition: background-color 0.3s ease;
+}
+.btn-scissors:hover,
+.btn-scissors:focus {
+  background-color: #5612e8 !important;
+  color: white !important;
+}
+
+.btn-scissors:active {
+  transition: none !important;
 }
 
 @media (min-width: 768px) {
